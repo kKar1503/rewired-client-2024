@@ -31,3 +31,7 @@ the house.
 ## Team Members
 
 - [Yam Kar Lok](https://github.com/kKar1503)
+- [Hong Yu]()
+- [Thaddeus]()
+- [Kenneth Chen]()
+- [Rezky]()

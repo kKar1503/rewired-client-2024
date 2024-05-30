@@ -16,9 +16,10 @@ COPY --from=deps /app/node_modules ./node_modules
 
 # Environment
 ARG NODE_ENV=production
-ARG ENV=development
 ENV NODE_ENV=$NODE_ENV
-ENV ENV=$ENV
+
+ARG NEXT_PUBLIC_WS_URL
+ENV NEXT_PUBLIC_WS_URL=$NEXT_PUBLIC_WS_URL
 
 RUN npm run build
 
@@ -28,9 +29,10 @@ WORKDIR /app
 
 # Environment
 ARG NODE_ENV=development
-ARG ENV=development
 ENV NODE_ENV=$NODE_ENV
-ENV ENV=$ENV
+
+ARG NEXT_PUBLIC_WS_URL
+ENV NEXT_PUBLIC_WS_URL=$NEXT_PUBLIC_WS_URL
 
 RUN addgroup --system --gid 1001 nodejs
 RUN adduser --system --uid 1001 nextjs

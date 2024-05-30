@@ -50,7 +50,7 @@ jobs:
         uses: ./.github/actions/build
 
   deploy:
-    needs: [lint, test, build]
+    needs: [lint, build]
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
     steps:

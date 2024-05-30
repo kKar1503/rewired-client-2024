@@ -1,29 +1,33 @@
-# Create T3 App
+# ReWired 2024 Hackathon ReRemote Client
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+This is the frontend implementation to display the information that is transmitted by the
+[Websocket Server](https://github.com/kKar1503/rewired-server-2024).
 
-## What's next? How do I make an app with this?
+The frontend implementation aims to showcase what the ReRemote product provides at the basic level from
+a proper usage of its devices using the information from the server.
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+This Next.JS TypeScript project bootstrapped with `create-t3-app`.
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+## Deployed Live URL \[Currently Active\]
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Drizzle](https://orm.drizzle.team)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+Currently, the client project is being deployed on the following URL:
 
-## Learn More
+<https://rewired-client.karlok.dev>
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+## Product: ReRemote
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+The product ReRemote is a product aim to repurpose IR sensors from remote controllers to act as gates that would help track
+the number of persons that pass by.
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+The product is design to provide the ability to keep track of the number of people in a specific area based on people moving
+through the ReRemote's gates. With that, we would have the ability to downstream this information to control room
+temperature, air conditioning, and lighting in an efficient manner. For instance, if nobody is present in an area, one might
+turn off the power of certain appliances to save energy.
 
-## How do I deploy this?
+However, the possibility for such integration is endless, as the product only provides a simple, elegent and yet infinitely
+extensible interface that allows for all types of integration that can utilise the number of people in different section of
+the house.
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+## Team Members
+
+- [Yam Kar Lok](https://github.com/kKar1503)

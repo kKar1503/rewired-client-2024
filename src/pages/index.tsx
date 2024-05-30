@@ -6,7 +6,7 @@ import Head from "next/head";
 import { env } from "@/env";
 
 export default function Home() {
-  const wsData = useWebsocket(env.NEXT_PUBLIC_WS_URL);
+  const wsData = useWebsocket(env.NEXT_PUBLIC_WS_URL ?? "");
 
   React.useEffect(() => {
     console.log(wsData);
